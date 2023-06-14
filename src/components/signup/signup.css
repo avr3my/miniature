@@ -1,0 +1,25 @@
+.sign-up .top-image{
+    width: 90vw;
+    margin: 70px auto;
+    max-width: 400px;
+}
+.sign-up .top-image img{
+    width: 100%;
+}
+
+.sign-up .image-grid{
+    width: 90vw;
+    margin: auto;
+    max-width: 400px;
+    display: flex;
+    /* gap: 20px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sign-up .image-grid .image{
+    width: 45%;
+    margin: 3% 1%;
+}
+.sign-up .image-grid img{
+    width: 100%;
+}

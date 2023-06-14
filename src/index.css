@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: text-font;
+    src: url("./assets/myriad-hebrew-4.otf");
+  }
+:root {
+    --text-color:#000;
+    --main-color: #fac3c3;
+    --red-color:#d82046;
+    --green-color:#6bbe48;
+}

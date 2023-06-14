@@ -1,0 +1,52 @@
+.profile-page{
+    font-family: text-font;
+    margin-bottom: 30px;
+}
+.trophy{
+    width: 100vw;
+    max-width: 500px;
+    margin: 10px auto;
+}
+.trophy img{
+    width: 100vw;
+    max-width: 500px;
+}
+
+.trophy h2,
+.trophy h1{
+    text-align: center;
+}
+.completed-tasks{
+    margin-top: 15px;
+}
+.task{
+    margin:5px auto;
+    width: 90vw;
+    max-width: 450px;
+    display: flex;
+    /* height: 100px; */
+}
+.task img.checkmark {
+    max-width: 15%;
+    object-fit: contain;
+    /* margin-bottom: 5px; */
+}
+.task .task-message {
+    width: 70vw;
+    position: relative;
+    display: flex;
+}
+.task .task-message img {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    /* top: 7px; */
+    /* inset: 0; */
+}
+.task .task-message p{
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+}
