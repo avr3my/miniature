@@ -1,11 +1,14 @@
 .contact-page{
     padding: 20px;
-    font-family: text-font;
+    font-family: matritsa;
+    font-weight: 300;
 }
 
 .contact-page p.welcome{
     text-align: center;
-    font-size: 1.4em;
+    font-family: yarden;
+    font-size: 1.5em;
+
     margin: 15px 0 45px;
 }
 
@@ -45,9 +48,10 @@
 p.end-text{
     width: 85vw;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 h2.waiting{
     margin: 20px auto;
     text-align: center;
+    font-family: yarden;
 }

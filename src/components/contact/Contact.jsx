@@ -9,9 +9,9 @@ export default function Contact({ setSelected }) {
   const {contact} = texts
   const [fname, setFname] = useState('')
   const [lname, setLname] = useState('')
-  const [age, setAge] = useState(null)
-  const [phone, setPhone] = useState(null)
-  const [mail, setMail] = useState(null)
+  const [age, setAge] = useState('')
+  const [phone, setPhone] = useState('')
+  const [mail, setMail] = useState('')
   useEffect(() => {
     setSelected("contact");
   }, []);

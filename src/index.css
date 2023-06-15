@@ -5,13 +5,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
-    font-family: text-font;
-    src: url("./assets/myriad-hebrew-4.otf");
-  }
+    font-family: matritsa;
+    src: url("./fonts/FbMatritsa-ExtraLight.otf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: matritsa;
+    src: url("./fonts/FbMatritsa-Light.otf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: matritsa;
+    src: url("./fonts/FbMatritsa-Regular.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: matritsa;
+    src: url("./fonts/FbMatritsa-Regular.otf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: yarden;
+    src: url("./fonts/yarden-regular-alefalefalef.otf");
+}
+@font-face {
+    font-family: shirbut;
+    src: url("./fonts/FbShirbut-Regular.otf");
+}
 :root {
-    --text-color:#000;
+    --text-color: #000;
     --main-color: #fac3c3;
-    --red-color:#d82046;
-    --green-color:#6bbe48;
+    --red-color: #d82046;
+    --green-color: #6bbe48;
 }

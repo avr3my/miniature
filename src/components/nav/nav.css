@@ -1,29 +1,43 @@
 .nav-top, .nav-bottom{
-    font-family: text-font;
     background-color: var(--main-color);
     margin: 0;
     padding: 0 10px;
-
 }
 .nav-top{
     padding: 15px;
-    height: 50px;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
 }
 .nav-top .name{
     font-size: 1.5em;
+    font-family: yarden;
 }
 .nav-top .logos{
     display: flex;
-    gap: 15px;
+    gap: 5px;
 }
-.nav-top .logos>svg{
+.nav-top .logos svg{
     font-size: 1.5em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.nav-top .logos .outer{
+    position: relative;
+    padding:5px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.5s;
 
 }
-.nav-top .logos>svg:nth-child(3){
-    font-size: 1.3em;
+.nav-top .logos .outer:active{
+    background-color: #0000003f;
+    transition: 0s;
+
 }
 
 .nav-bottom{
@@ -31,6 +45,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-family: matritsa;
+    font-weight: 300;
     gap: 15px;
     position: sticky;
     top: 0px;
@@ -47,6 +63,17 @@
 }
 .nav-bottom .selected {
     color: var(--red-color);
-    font-weight: bold;
+    font-weight: 700;
     border-bottom: 3px solid var(--red-color);
+}
+
+.nav-menu {
+    position: absolute;
+    top: 100%;
+    background-color: #bbb;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
 }

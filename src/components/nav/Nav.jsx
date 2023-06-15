@@ -1,54 +1,32 @@
 import "./nav.css";
-
-import { useEffect, useState } from "react";
 import texts from "../Texts";
-import { Link } from "react-router-dom";
-
-import {FaWhatsapp } from 'react-icons/fa'
-import {BiSearch} from 'react-icons/bi'
-import {SlOptionsVertical} from "react-icons/sl"
-export default function Nav({selected, setSelected}) {
-  
+import { FaWhatsapp } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { BiSearch } from "react-icons/bi";
+import { SlOptionsVertical } from "react-icons/sl";
+import BottomNav from "./BottomNav";
+export default function Nav({ selected, setSelected }) {
+  const [show, setShow] = useState(true) 
   return (
     <>
       <div className="nav-top">
         <span className="name">{texts.name}</span>
         <span className="logos">
-          <FaWhatsapp/>
-          <BiSearch/>
-          <SlOptionsVertical/>
+          <a className="outer"
+            href={`https://api.whatsapp.com/send?phone=972534873704&text=${texts.message}`}
+          >
+            <FaWhatsapp />
+          </a>
+          <i  className="outer">
+            <BiSearch />
+          </i>
+          <i className="outer" onClick={()=> setShow(!show)}>
+            <SlOptionsVertical />
+            {/* {show && <BottomNav setShow={setShow} selected={selected} setSelected={setSelected} menu/>} */}
+          </i>
         </span>
       </div>
-      <div className="nav-bottom">
-        <Link
-          onClick={() => setSelected("home")}
-          className={`link ${selected === "home" ? "selected" : ""}`}
-          to={"/"}
-        >
-          {texts.nav.home}
-        </Link>
-        <Link
-          onClick={() => setSelected("sign-up")}
-          className={`link ${selected === "sign-up" ? "selected" : ""}`}
-          to={"/sign-up"}
-        >
-          {texts.nav.sign}
-        </Link>
-        <Link
-          onClick={() => setSelected("contact")}
-          className={`link ${selected === "contact" ? "selected" : ""}`}
-          to={"/contact"}
-        >
-          {texts.nav.contact}
-        </Link>
-        <Link
-          onClick={() => setSelected("my-profile")}
-          className={`link ${selected === "my-profile" ? "selected" : ""}`}
-          to={"/my-profile"}
-        >
-          {texts.nav.personal}
-        </Link>
-      </div>
+      <BottomNav setShow={setShow} selected={selected} setSelected={setSelected}/>
     </>
   );
 }

@@ -19,7 +19,7 @@ export default function Home({ setSelected }) {
   const handleScroll = (e) => {
     let documentHeight = document.body.scrollHeight;
     let currentScroll = window.scrollY + window.innerHeight;
-    setAtBottom(currentScroll + 10 > documentHeight)
+    setAtBottom(currentScroll + 20 > documentHeight)
   };
   return (
     <div className="home-page">

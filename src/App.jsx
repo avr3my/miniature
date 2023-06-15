@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Contact from "./components/contact/Contact";
 import Signup from "./components/signup/Signup";
 import MyProfile from "./components/myProfile/MyProfile";
 import Nav from "./components/nav/Nav";
 import Home from "./components/home/Home";
+import texts from "./components/Texts";
 
 
 export default function App() {
   const [selected, setSelected] = useState("home");
+  useEffect(()=>{
+    document.title = texts.name
+  },[])
 
   return (
         <div dir="rtl" className={`main-div`}>
