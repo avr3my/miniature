@@ -15,6 +15,9 @@ export default function Contact({ setSelected }) {
   useEffect(() => {
     setSelected("contact");
   }, []);
+  const signup = e =>{
+    alert(texts.alert)
+  }
   return (
     <div className="contact-page">
       <p className="welcome">{texts.welcome}</p>
@@ -29,7 +32,7 @@ export default function Contact({ setSelected }) {
         <Input text={contact.email} state={mail} setState={setMail} type={"email"}/>
       </form>
       <div className="sign">
-        <img src={signButton} alt="" />
+        <img onClick={signup} src={signButton} alt="" />
       </div>
       <p className="end-text">{contact.endText}</p>
       <h2 className="waiting">{contact.waiting}</h2>

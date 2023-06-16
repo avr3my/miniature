@@ -18,11 +18,7 @@ export default function MyProfile({setSelected}) {
       else arr.push(rand);
     }
     arr.forEach(i=> setTasks(prev=>[...prev, texts.personal.achivements[i]]))
-  }, [])
-  useEffect(() => {
-    console.log(tasks);
-  }, [tasks])
-  
+  }, []) 
   
   return (
     <div className='profile-page'>
