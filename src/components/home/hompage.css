@@ -15,13 +15,14 @@
     width: 80vw;
     margin: 15px auto;
     font-weight: bold;
+    font-size: 1.1em;
 }
 .home-page p.content{
     width: 80vw;
     margin: auto;
     margin-bottom: 100px;
     font-weight: 300;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 .home-page .image{
     display: flex;
